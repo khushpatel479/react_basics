@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import Lay from './Lay'
-import { click } from '@testing-library/user-event/dist/click'
 import { useNavigate } from 'react-router-dom'
+import { setitems , lg } from './local'
 const Form = () => {
     const[name,setname] = useState("")
     const[email,setemail] = useState("")
@@ -13,6 +13,19 @@ const Form = () => {
     const[m1 , setm1]=useState("")
     const[m2 , setm2]=useState("")
     const[sub,setsub]=useState([])
+    const ser = ()=>
+    {
+        setitems(name,email)
+        alert("REGISTERED")
+    }
+    const lr = ()=>
+    {
+       let um = lg(name)
+       if(um && um.pass===email)
+       {
+        alert("ok")
+       }
+    }
     useEffect(()=>
         {
             let s1 = document.querySelector("#sl1")
@@ -131,6 +144,9 @@ const sun = ()=>
             <select id='sl1' onChange={sp1}></select>
             <select id='sl2' onChange={sp2}></select>
     <button onClick={()=>{sun()}}>Submit</button>
+    <br/>
+    <button onClick={()=>{ser()}}>REGISTER</button>
+    <button onClick={()=>lr()}>LOGIN</button>
         </div>
     </>
   )

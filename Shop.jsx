@@ -32,7 +32,7 @@ const Shop = () => {
             <h3>{item.name}</h3>
             <p>{item.dec}</p>
             <button onClick={()=>add(item.id)}>+</button>
-            <span>{cart[item.id]}</span>
+            <span></span>
         </div>)
     })}
     

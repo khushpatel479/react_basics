@@ -14,6 +14,7 @@ const Context = (props)=>
             {
                 setcart((prev)=>({...prev,[id]:prev[id]+1}))
             }
+    
     }
 
     useEffect(()=>
