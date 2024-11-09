@@ -1,0 +1,47 @@
+.main
+{
+    height: 600px;
+    width: 800px;
+    margin-top: 20px;
+    background-color: orange;
+    margin-left: 300px;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+.card
+{
+    height: 200px;
+    width: 200px;
+    background-color: cadetblue;
+    
+}
+.d1
+{
+    height: 500px;
+    width: 800px;
+    margin-left: 300px;
+    margin-top: 10px;
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.d2
+{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.nm
+{
+    margin-top: -10px;
+    margin-left: 50px;
+    font-size: 50px;
+}
